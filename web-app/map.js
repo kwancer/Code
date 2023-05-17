@@ -1,15 +1,13 @@
+// Check for feature support
+var userAgent;
+if (navigator.userAgentData && navigator.userAgentData.brands) {
+  // Use navigator.userAgentData for modern browsers
+  userAgent = navigator.userAgentData;
+} else {
+  // Fallback for older browsers
+  userAgent = navigator.userAgent;
+}
 
-// Feature detection for navigator.userAgentData
-if (navigator.userAgentData) {
-    var userAgent = navigator.userAgentData;
-    // Access the desired information from userAgentData
-    // Example: var browserName = userAgent.brands[0].brand;
-  } else {
-    var userAgent = navigator.userAgent;
-    // Fallback for older browsers
-    // Use userAgent as before
-  }
-  
 
 
 
