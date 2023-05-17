@@ -36,7 +36,7 @@ async function initMap() {
       var location = {
         key: "",
         value: { x: x, y: y},
-        website: ".bins/bin" + i + ".html",
+        website: "./bins/bin" + i + ".html",
       };
 
       locations.push(location);
