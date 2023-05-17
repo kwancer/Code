@@ -31,3 +31,19 @@ body {
   .container {
     text-align: center;
   }
+
+  /* center the button and apply fancy and modern styling to it */
+  button {
+    margin: 0 auto;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
