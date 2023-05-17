@@ -1,5 +1,15 @@
 
-
+// Feature detection for navigator.userAgentData
+if (navigator.userAgentData) {
+    var userAgent = navigator.userAgentData;
+    // Access the desired information from userAgentData
+    // Example: var browserName = userAgent.brands[0].brand;
+  } else {
+    var userAgent = navigator.userAgent;
+    // Fallback for older browsers
+    // Use userAgent as before
+  }
+  
 
 
 
