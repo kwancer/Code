@@ -36,7 +36,6 @@ async function initMap() {
       var location = {
         key: "",
         value: { x: x, y: y},
-        website: "./bins/bin" + i + ".html",
       };
 
       locations.push(location);
@@ -48,29 +47,17 @@ async function initMap() {
         var marker = new google.maps.Marker({
             position: { lat: location.value.x, lng: location.value.y},
             map: map,
-            icon: "./assets/bin_map_marker_green.png" // Path to your custom marker icon
+            icon: "./assets/bin_map_marker_green.png", // Path to your custom marker icon
+            title : "./bins/bin" + i + ".html",
+        });
+        let website = marker.title;
+        marker.addListener("click", () => {
+          // window.open(website, "_blank");
+          window.location.href = website;
         });
         var key = (location.street);
         marker.setMap(map);
-        
-
-    // Add a click event listener to each marker
-        google.maps.event.addListener(marker, "click", function () {
-            window.open(location.website, "_blank"); // Open the website in a new tab
-            });
-
-            marker.setMap(map);
     }
 }
 
 initMap();
-
-// // 2. Create Markers
-// var marker1 = new google.maps.Marker({
-//     position: {lat: 51.497908265207755, lng: -0.17459382817652386}, // Example: Marker 1 coordinates
-//     map: map,
-//     icon: './assets/bin_map_marker.png' // Example: Custom icon for Marker 1
-//   });
-//   marker1.setMap(map);
-
-// 51.495792154711886, -0.17424883509111036
