@@ -34,16 +34,91 @@ body {
 
   /* center the button and apply fancy and modern styling to it */
   button {
-    margin: 0 auto;
-    display: block;
+    background-color: #0077b6;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #fff;
-    background-color: #0077b6;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
+    padding: 15px 25px;
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #023e8a;
+  }
+
+  /* Path: web-app\src\components\Header.js */
+  .header {
+    background-color: #0077b6;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  /* Path: web-app\src\components\Home.js */
+  .home {
+    padding: 50px 0;
+  }
+  
+  .home h2 {
+    padding: 0 0 20px;
+  }
+  
+  .home .image {
+    margin-bottom: 30px;
+  }
+  
+  .home .image img {
+    width: 100%;
+  }
+
+  /* Path: web-app\src\components\NotFound.js */
+  .not-found {
+    padding: 50px 0;
+  }
+  
+  .not-found h2 {
+    padding: 0 0 20px;
+  }
+  
+  .not-found p {
+    padding: 0 0 20px;
+  }
+
+  /* Path: web-app\src\components\Profile.js */
+  .profile {
+    padding: 50px 0;
+  }
+  
+  .profile h2 {
+    padding: 0 0 20px;
+  }
+  
+  .profile .image {
+    margin-bottom: 30px;
+  }
+  
+  .profile .image img {
+    width: 100%;
+  }
+
+  /* Path: web-app\src\components\ProfileList.js */
+  .profile-list {
+    padding: 50px 0;
+  }
+  
+  .profile-list h2 {
+    padding: 0 0 20px;
+  }
+
+  /* Path: web-app\src\components\ProfileListItem.js */
+  .profile-list-item {
+    margin-bottom: 30px;
   }
