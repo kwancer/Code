@@ -48,9 +48,9 @@ async function initMap() {
             position: { lat: location.value.x, lng: location.value.y},
             map: map,
             icon: "./assets/bin_map_marker_green.png", // Path to your custom marker icon
-            title : "./bins/bin" + i + ".html",
+            url : "./bins/bin" + i + ".html",
         });
-        let website = marker.title;
+        let website = marker.url;
         marker.addListener("click", () => {
           // window.open(website, "_blank");
           window.location.href = website;
