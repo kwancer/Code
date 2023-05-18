@@ -11,7 +11,7 @@ $data = array('x' => $lat, 'y' => $long);
 $jsonData = json_encode($data);
 
 // Write the JSON string to the file
-$file = 'userdata.txt';
+$file = 'binlocation.txt';
 file_put_contents($file, $jsonData);
 
 // Send a response back to the JavaScript code
