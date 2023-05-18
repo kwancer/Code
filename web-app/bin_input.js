@@ -47,11 +47,7 @@
         console.log(long)
   
         const xhr = new XMLHttpRequest();
-<<<<<<< HEAD
         xhr.open("POST", "location-request.php", true);
-=======
-        xhr.open("POST", "location_request.php", true);
->>>>>>> 273281493ad8f71792a91d500e840251b23ccc25
         xhr.setRequestHeader("Content-Type", "multipart/form-data");
         xhr.onreadystatechange = function() {
           if (xhr.readyState === XMLHttpRequest.DONE) {
